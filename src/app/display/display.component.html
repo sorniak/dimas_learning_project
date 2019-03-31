@@ -1,0 +1,8 @@
+<div class="row no-gutters mx-5" *ngFor="let toBuyItem of toBuyItems | async;" ><!--buy list -->
+	<div class="col-10">
+			<input type="text" class="input-group text-info h-100" readonly value="{{toBuyItem.toBuy}}" (click)="markToBuy(toBuyItem)" [ngClass]="(toBuyItem.isBought) ? 'selected' : 'not_selected'">
+	</div> <!--readonly input with to buy element-->
+	<div class="col-2">
+		<span class="input-group-text text-danger justify-content-center btn-warning" (click)="delToBuy(toBuyItem)">DELETE</span> <!--delete button for each buy element-->
+	</div>
+</div>

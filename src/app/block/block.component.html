@@ -1,0 +1,8 @@
+<div class="row no-gutters m-5"> 
+	<div class="col-10">
+		<input type="text" class="form-control" placeholder="Add What To Buy" name="toBuy" #toBuy ngModel>
+	</div>
+	<div class="col-2">
+		<span class="input-group-text text-dark justify-content-center btn-secondary" (click)="addToBuy({toBuy:toBuy.value,isBought:false})">ADD</span>
+	</div>
+</div>                          

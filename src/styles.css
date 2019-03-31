@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.selected[type="text"] {
+  background-color: rgba(10, 10, 230, 0.1);
+}
+
+.not_selected[type="text"] {
+  background-color: white;
+}
